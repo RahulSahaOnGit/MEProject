@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.meproject">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CustomerPayActivity"></activity>
+        <activity android:name=".CustomerAddBalanceActivity"></activity>
+        <activity android:name=".CustomerPayActivity" />
         <activity android:name=".RetailerQR" />
         <activity android:name=".RetailerHomePage" />
         <activity android:name=".CustomerHomePage" />
@@ -22,10 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Capture"
+        <activity
+            android:name=".Capture"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
-            android:theme="@style/zxing_CaptureTheme"/>
+            android:theme="@style/zxing_CaptureTheme" />
     </application>
 
 </manifest>

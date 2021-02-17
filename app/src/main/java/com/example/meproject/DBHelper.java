@@ -49,6 +49,18 @@ public class DBHelper extends SQLiteOpenHelper {
             return true;
     }
 
+    public Boolean updateBalance(String email, double balance)
+    {
+        SQLiteDatabase MYDB=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put("balance", balance);
+        long result=MYDB.update("users", contentValues, "email=?", new String[]{email});
+        if (result==-1)
+            return false;
+        else
+            return true;
+    }
+
     public Boolean checkUserExist(String email){
         SQLiteDatabase MYDB=this.getWritableDatabase();
         Cursor cursor=MYDB.rawQuery("select * from users where email = ?", new String[]{email});

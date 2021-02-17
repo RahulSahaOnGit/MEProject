@@ -86,5 +86,10 @@ public class CustomerHomePage extends AppCompatActivity {
         intent.putExtra("toUser", contents);
         startActivity(intent);
     }
+
+    public void openCustomerAddBalanceActivity(View view) {
+        Intent intent=new Intent(this, CustomerAddBalanceActivity.class);
+        startActivity(intent);
+    }
 }
 

@@ -51,8 +51,6 @@ public class CustomerPayActivity extends AppCompatActivity {
         retailerNameTextView.setText("Paying to "+retailerName);
         balanceTextView.setText("Your Balance is "+customerBalance);
         pointsTextView.setText("You have "+customerPoints+" points");
-        Toast.makeText(CustomerPayActivity.this, "To User mail"+ getIntent().getStringExtra("toUser"), Toast.LENGTH_LONG).show();
-        Toast.makeText(CustomerPayActivity.this, "From User mail"+ getIntent().getStringExtra("fromUser"), Toast.LENGTH_LONG).show();
 
     }
 

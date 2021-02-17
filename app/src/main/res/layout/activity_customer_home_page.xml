@@ -22,6 +22,13 @@
         android:text="Scan &amp; Pay"
         android:onClick="openCustomerScanActivity" />
 
+    <Button
+        android:id="@+id/addBalanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Balance"
+        android:onClick="openCustomerAddBalanceActivity" />
+
     <TextView
         android:id="@+id/balanceTextView"
         android:layout_width="wrap_content"
